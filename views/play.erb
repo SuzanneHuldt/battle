@@ -1,2 +1,8 @@
 
-<h1> Are you ready to battle? <%= @name1 %> vs <%= @name2 %> </h1>
+<h1> Are you ready to battle? <%= $player_1.name %> vs <%= $player_2.name %> </h1>
+
+<h1> Player 2 hit-points: <%= $player_2.hitpoints %>HP </h1>
+
+<form action="/attack" method="get">
+  <input type="submit" value="ATTACK">
+</form>
